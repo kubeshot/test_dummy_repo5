@@ -1,5 +1,6 @@
 version: 2
 updates:
+  # npm - Node.js/JavaScript
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
@@ -7,13 +8,3 @@ updates:
     labels:
       - "dependencies"
       - "security"
-    versioning-strategy: increase
-    
-  # Always include GitHub Actions for any repository
-  - package-ecosystem: "github-actions"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-    labels:
-      - "dependencies"
-      - "automation" 
